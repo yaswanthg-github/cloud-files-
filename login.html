@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f4f4f4;
+
+            margin: 0;
+
+            padding: 20px;
+
+        }
+
+        h1 {
+
+            text-align: center;
+
+            color: #333;
+
+        }
+
+        .login-container {
+
+            max-width: 400px;
+
+            margin: 0 auto;
+
+            padding: 20px;
+
+            background: white;
+
+            border-radius: 5px;
+
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+        label {
+
+            display: block;
+
+            margin: 10px 0 5px;
+
+            font-weight: bold;
+
+            color: #555;
+
+        }
+
+        input[type="text"],
+
+        input[type="password"] {
+
+            width: 100%;
+
+            padding: 10px;
+
+            margin-bottom: 15px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 4px;
+
+            box-sizing: border-box;
+
+            transition: border 0.3s;
+
+        }
+
+        input[type="text"]:focus,
+
+        input[type="password"]:focus {
+
+            border-color: #28a745;  /* Change border color on focus */
+            outline: none;
+
+}
+
+input[type="submit"] {
+
+    background-color: #28a745;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    width: 100%;
+
+    transition: background-color 0.3s;
+
+}
+
+input[type="submit"]:hover {
+
+    background-color: #218838;
+
+}
+
+.register-link {
+
+    display: block;
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    color: #007bff;
+
+    text-decoration: none;
+
+}
+
+.register-link:hover {
+
+    text-decoration: underline;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Login</h1>
+
+
+
+<div class="login-container">
+
+<form method="POST" action="/login">
+
+    <label for="username">Username:</label>
+
+    <input type="text" name="username" required>
+
+
+
+    <label for="password">Password:</label>
+
+    <input type="password" name="password" required>
+
+
+    <input type="submit" value="Login">
+
+</form>
+
+
+
+<a href="/" class="register-link">Don't have an account? Register here.</a>
+
+</div>
+
+</body>
+
+</html>
+                                                                           

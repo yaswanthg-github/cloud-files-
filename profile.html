@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>User Profile</title>
+
+    <style>
+
+        /* Add your CSS styles here (same as in register.html) */
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>User Profile</h1>
+
+    <p>Username: {{ user[1] }}</p>
+
+    <p>First Name: {{ user[3] }}</p>
+
+    <p>Last Name: {{ user[4] }}</p>
+
+    <p>Email: {{ user[5] }}</p>
+
+    <p>Uploaded File: {{ user[6] }}</p>
+
+    <p>Word Count: {{ user[7] }}</p>
+
+    <a href="/download/{{ user[6] }}">Download Uploaded File</a>
+
+    <br>
+
+    <a href="/">Logout</a>
+
+</body>
+
+</html>
